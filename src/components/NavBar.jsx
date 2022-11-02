@@ -8,6 +8,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
 } from '../styled/NavBar.styles'
 import { animateScroll as scroll } from 'react-scroll'
 
@@ -52,42 +54,15 @@ const NavBar = ({ toggle }) => {
               Acerca
             </NavLinks>
           </NavItem>
-          <NavItem>
-            <NavLinks
-              to="habitaciones"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Habitaciones
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="servicios"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Servicios
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="Contacto"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Contacto
-            </NavLinks>
-          </NavItem>
+          <NavBtn>
+            <NavBtnLink to="/habitaciones">Habitaciones</NavBtnLink>
+          </NavBtn>
+          <NavBtn>
+            <NavBtnLink to="/servicios">Servicios</NavBtnLink>
+          </NavBtn>
+          <NavBtn>
+            <NavBtnLink to="/contacto">Contacto</NavBtnLink>
+          </NavBtn>
         </NavMenu>
       </NavBarContainer>
     </Nav>

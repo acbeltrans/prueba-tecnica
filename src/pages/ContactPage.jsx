@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Services, NavBar, SideBar, Footer } from '../components'
+import { Contact, NavBar, SideBar, Footer } from '../components'
 
-export const ServicesPage = () => {
+const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -11,10 +11,10 @@ export const ServicesPage = () => {
     <>
       <SideBar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
-      <Services />
+      <Contact />
       <Footer />
     </>
   )
 }
 
-export default ServicesPage
+export default ContactPage

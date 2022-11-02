@@ -5,11 +5,13 @@ import {
   SideBarWrapper,
   SideBarMenu,
   SideBarLink,
+  SideBtnWrap,
+  SideBarRoute,
 } from '../styled/SideBar.styles'
 
 const SideBar = ({ isOpen, toggle }) => {
   return (
-    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+    <SideBarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -18,15 +20,15 @@ const SideBar = ({ isOpen, toggle }) => {
           <SideBarLink to="acerca" onClick={toggle}>
             Acerca
           </SideBarLink>
-          <SideBarLink to="habitaciones" onClick={toggle}>
-            Habitaciones
-          </SideBarLink>
-          <SideBarLink to="servicios" onClick={toggle}>
-            Servicios
-          </SideBarLink>
-          <SideBarLink to="contacto" onClick={toggle}>
-            Contacto
-          </SideBarLink>
+          <SideBtnWrap>
+            <SideBarRoute to="/habitaciones">Habitaciones</SideBarRoute>
+          </SideBtnWrap>
+          <SideBtnWrap>
+            <SideBarRoute to="/servicios">Servicios</SideBarRoute>
+          </SideBtnWrap>
+          <SideBtnWrap>
+            <SideBarRoute to="/contacto">Contacto</SideBarRoute>
+          </SideBtnWrap>
         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>
