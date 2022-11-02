@@ -19,18 +19,18 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Servicio 1</ServicesH2>
-          <ServicesP>Texto</ServicesP>
+          <ServicesH2>Eventos</ServicesH2>
+          <ServicesP>Precio: $341</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Servicio 2</ServicesH2>
-          <ServicesP>Texto</ServicesP>
+          <ServicesH2>Matrimonio</ServicesH2>
+          <ServicesP>Precio: $21</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Servicio 3</ServicesH2>
-          <ServicesP>Texto</ServicesP>
+          <ServicesH2>Conferencias</ServicesH2>
+          <ServicesP>Precio: $40</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

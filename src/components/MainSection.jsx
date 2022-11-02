@@ -5,7 +5,6 @@ import {
   VideoBackground,
   MainContent,
   MainH1,
-  MainP,
 } from '../styled/MainSection.styles'
 
 const MainSection = () => {
@@ -15,7 +14,6 @@ const MainSection = () => {
         <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
         <MainContent>
           <MainH1>Movich Hoteles</MainH1>
-          <MainP>Texto descriptivo</MainP>
         </MainContent>
       </MainBackground>
     </MainContainer>
